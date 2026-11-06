@@ -21,12 +21,11 @@ instrumental, cartões compartilháveis e pequenas surpresas escondidas na sala.
 O cenário ocupa a primeira tela da página. Abaixo dele, o visitante pode criar
 uma mensagem de Natal e compartilhar o link com alguém especial.
 
-### Um dos cenários especiais
+### Prévia do cenário
 
-![Ilustração da estrebaria: Maria e José contemplam Jesus na manjedoura sob a estrela de Belém, com uma ovelha e um burrinho ao lado.](src/assets/nativity-illustration.png)
+![Captura do Natal Frontend 2.0: sala com árvore iluminada, lareira, presentes, janela com neve e controles do cenário.](docs/images/cenario.png)
 
-*Arte usada na cena de Belém, criada com geração de imagens por IA. Esta é a
-ilustração do cenário, não uma captura da interface.*
+*Cenário principal em tela cheia, com os controles de ambiente, música e acesso aos cartões de Natal.*
 
 ## O que você encontra
 
