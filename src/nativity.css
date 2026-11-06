@@ -1,0 +1,22 @@
+.nativity-scene { position: absolute; inset: 0; overflow: hidden; background: radial-gradient(ellipse at 50% 70%, #5a5942 0, #233944 48%, #111e30 100%); animation: nativity-reveal 1.4s ease-out both; color: #f5e8cc; }
+.nativity-stars { position: absolute; inset: 0; opacity: .6; background: radial-gradient(circle at 13% 25%, #f8e5b6 1px, transparent 2px), radial-gradient(circle at 77% 15%, #f8e5b6 1px, transparent 2px), radial-gradient(circle at 91% 44%, #f8e5b6 1px, transparent 2px), radial-gradient(circle at 30% 17%, #f8e5b6 1px, transparent 2px); background-size: 320px 230px, 470px 310px, 370px 280px, 520px 290px; }
+.nativity-image { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 65%; }
+.nativity-scene::after { content: ''; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(90deg, #081a2560, transparent 55%), linear-gradient(0deg, #07172580, transparent 22%); }
+.nativity-heading { position: absolute; z-index: 1; top: 14%; left: 3%; width: 32%; text-align: left; padding: 0 24px; text-shadow: 0 2px 15px #001720; }
+.nativity-heading > span { font-size: 9px; letter-spacing: 3px; color: #d5bd87; }
+.nativity-heading h2 { font-family: Georgia, serif; font-size: clamp(24px, 2.5vw, 36px); font-weight: 400; line-height: 1.25; margin: 14px 0; }
+.nativity-heading p { font-size: 12px; color: #d2c9af; }
+.nativity-back { position: absolute; z-index: 2; bottom: max(20px, env(safe-area-inset-bottom)); left: 50%; transform: translateX(-50%); border: 1px solid #d4be8c70; border-radius: 24px; background: #152732ec; color: #f5e8cc; padding: 12px 20px; font-size: 12px; white-space: nowrap; }
+.nativity-back:hover { background: #344743; }
+.site-shell:has(.nativity-scene) .site-header { color: #f5e8cc; background: linear-gradient(#111e3080, transparent); }
+@keyframes nativity-reveal { from { opacity: 0; filter: brightness(2); } to { opacity: 1; filter: brightness(1); } }
+@media(max-width:700px) and (orientation:portrait) {
+  .nativity-scene { background: #06232e; }
+  .nativity-image { inset: auto; bottom: 10%; left: -25%; width: 150%; height: auto; max-width: none; object-fit: contain; }
+  .nativity-scene::after { background: linear-gradient(0deg, #06232e, transparent 18%, transparent 60%, #06232e50); }
+  .nativity-heading { top: 16%; left: 0; width: 100%; text-align: center; }
+  .nativity-heading h2 { font-size: clamp(24px, 5vw, 32px); }
+  .nativity-heading p { font-size: 11px; }
+}
+@media(max-height:540px) and (min-width:521px) { .nativity-heading { top: 23%; width: 34%; left: 0; } .nativity-heading h2 { font-size: 21px; } }
+@media(prefers-reduced-motion:reduce) { .nativity-scene { animation: none; } }
